@@ -67,10 +67,6 @@
     background-color: var(--primary-color);
   }
   
-
-  
-
-  
   td {
     font-size: 0.9rem;
   }
