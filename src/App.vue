@@ -20,7 +20,6 @@ export default {
   },
   data() {
     return {
-      // Az importált adatokat használjuk itt
       artists: artistsData,
       songs: songsData,
       filteredSongs: []
@@ -28,7 +27,6 @@ export default {
   },
   methods: {
     fetchSongs(artistId) {
-      // Szűrjük le a dalokat az ARTIST_ID alapján
       this.filteredSongs = this.songs.filter(song => song.ARTIST_ID === artistId);
     }
   }

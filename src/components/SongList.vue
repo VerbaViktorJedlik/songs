@@ -32,9 +32,7 @@
       songs: Array
     },
     methods: {
-      // Kiválasztjuk az előadót az ARTIST_ID alapján
       getArtistName(artistId) {
-        // Itt hívhatod meg az App.vue komponensből vagy egy másik adatforrásból az előadók nevét
         const artist = this.$root.artists.find(a => a._id === artistId);
         return artist ? artist.artist : 'Unknown Artist';
       }
@@ -43,10 +41,9 @@
   </script>
   
   <style scoped>
-  /* Táblázat stílusok */
   .song-list {
     margin-top: 20px;
-    overflow-x: auto; /* Ha a táblázat szélessége túl nagy, akkor görgethető lesz */
+    overflow-x: auto; 
   }
   
   table {
